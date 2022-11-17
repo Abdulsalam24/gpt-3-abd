@@ -2,3 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.menu-list li{
+    @apply hover:text-orange lg:my-0 font-normal
+}
+.blur-img{
+    @apply absolute bg-bluish blur-[282px] -z-10
+
+}
