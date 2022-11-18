@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import { FaTimes } from "react-icons/fa";
 import { AiOutlineMenu } from "react-icons/ai";
@@ -7,12 +7,18 @@ import gptLogo from "../asset/img/gpt3-logo.svg";
 const Nav = () => {
   const [mobile, setMobile] = useState(true);
 
-  // if (mobile) {
-  //   window.document.body.style = "fixed";
-  // }
+  useEffect(() => {
+    const scroll = () => {
+      if (window.scroll) {
+        setMobile(mobile);
+      }
+    };
+
+    window.addEventListener("scroll", scroll);
+  }, []);
 
   return (
-    <nav className="z-10 pb-[50px]">
+    <nav className="nav z-10 pb-[50px]">
       <div className="relative w-full px-7 max-w-[1300px] flex justify-between items-center mx-auto py-6 lg:px-4 lg:py-3 lg:gap-4">
         <div className="lg:w-[10%]">
           <img className="w-20 " src={gptLogo} alt="gptLogo" />
@@ -33,7 +39,7 @@ const Nav = () => {
           <ul className="btn flex flex-col gap-10 px-7 lg:flex-row lg:items-center lg:p-0 ">
             <li>Sign in</li>
             <li>
-              <button className="bg-orange py-3 px-7 rounded-[5px]">
+              <button className="bg-orange hover:bg-orangeLight py-3 px-7 rounded-[5px]">
                 Sign up
               </button>
             </li>

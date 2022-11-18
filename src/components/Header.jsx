@@ -31,16 +31,18 @@ const Header = () => {
               type="text"
               placeholder="Your Email Address"
             />
-            <button className="bg-orange text-white py-4 px-4 border-none rounded-r-md w-[40%] sm:w-[24%] md:py-6">
+            <button className="bg-orange hover:bg-orangeLight text-white py-4 px-4 border-none rounded-r-md w-[40%] sm:w-[24%] md:py-6">
               Get Started
             </button>
           </div>
-          <div className="img my-5 flex flex-col items-center gap-5 sm:flex-row">
+
+          <div className="img my-9 flex flex-col items-center gap-5 sm:flex-row">
             <img className="w-40" src={groupImg} alt="" />
             <p className="text-xs text-white">
               1,600 people requested access a visit in last 24 hours
             </p>
           </div>
+
         </div>
         <div className="img text-center w-full flex justify-center lg:w-[46%]">
           <img src={illustration} alt="illustration" />

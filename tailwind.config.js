@@ -21,9 +21,12 @@ module.exports = {
       colors: {
         'orange': '#FF4820',
         'orangeLight': '#FF8A71',
+        'blueDeep': '#1B78DE',
         'bluish': ' #052D56',
         'blueLight': "#81afdd",
         'blueLight2': "#71E5FF",
+        'blueDark': '#031B34',
+        
       },
     },
   },

@@ -1,4 +1,5 @@
 import bar from "../asset/img/info-bar.svg";
+import blur5 from "../asset/img/blur5.svg";
 
 const Feature = () => {
   const feature = [
@@ -21,7 +22,14 @@ const Feature = () => {
   ];
 
   return (
-    <div className="container-div feature pt-20">
+    <div className="container-div relative feature pt-20">
+      <img
+        className="absolute -z-10 bg-[#07325F] blur-[282px] w-[777px] h-[777px] left-[-400px] top-[0px] "
+        src={blur5}
+        alt="blur1"
+      />
+
+
       <div className="flex flex-col gap-16 justify-between lg:flex-row items-start">
         <div className="flex flex-col gap-9 lg:w-[40%]">
           <h3>
