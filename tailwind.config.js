@@ -20,8 +20,10 @@ module.exports = {
     extend: {
       colors: {
         'orange': '#FF4820',
-        
-        'bluish': ' #052D56'
+        'orangeLight': '#FF8A71',
+        'bluish': ' #052D56',
+        'blueLight': "#81afdd",
+        'blueLight2': "#71E5FF",
       },
     },
   },

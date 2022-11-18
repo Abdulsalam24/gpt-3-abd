@@ -3,6 +3,7 @@ import React from "react";
 import illustration from "../asset/img/header-illustration.svg";
 import blur1 from "../asset/img/blur1.svg";
 import blur2 from "../asset/img/blur2.svg";
+import groupImg from "../asset/img/group-img.svg";
 
 const Header = () => {
   return (
@@ -12,7 +13,8 @@ const Header = () => {
         src={blur1}
         alt="blur1"
       />
-      <div className="flex flex-col justify-between lg:flex-row mx-auto lg:items-center">
+
+      <div className="flex flex-col justify-between gap-10 lg:flex-row mx-auto lg:items-center lg:gap-0">
         <div className="text max-w-2xl lg:max-w-full lg:w-[54%]">
           <h1 className="leading-[75px] text-[56px] lg:text-[64px]">
             Let’s Build Something amazing with GPT-3 OpenAI
@@ -33,11 +35,18 @@ const Header = () => {
               Get Started
             </button>
           </div>
+          <div className="img my-5 flex flex-col items-center gap-5 sm:flex-row">
+            <img className="w-40" src={groupImg} alt="" />
+            <p className="text-xs text-white">
+              1,600 people requested access a visit in last 24 hours
+            </p>
+          </div>
         </div>
         <div className="img text-center w-full flex justify-center lg:w-[46%]">
           <img src={illustration} alt="illustration" />
         </div>
       </div>
+
       <img
         className="blur-img w-[700px] h-[500px] right-[-100px] bottom-[-150px]"
         src={blur2}
